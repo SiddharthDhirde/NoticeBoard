@@ -1,0 +1,9 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+.content {
+    text-align: center;
+    margin-top: 50px;
+}
