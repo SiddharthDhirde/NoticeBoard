@@ -24,19 +24,36 @@ self.addEventListener("activate", (e) => {
   );
 });
 
-// Call Fetch Event
+// // Call Fetch Event
+// self.addEventListener("fetch", (e) => {
+//   console.log("Service Worker: Fetching");
+//   e.respondWith(
+//     fetch(e.request).then((res) => {
+//       // Make a copy/clone response
+//       const resClone = res.clone();
+//       // Open cache
+//       caches.open(cacheName).then((cache) => {
+//         // add response to cache
+//         cache.put(e.request, resClone);
+//       });
+//       return res;
+//     }).catch(err => caches.match(e.request).then(res => res))
+//   );
+// });
+
 self.addEventListener("fetch", (e) => {
-  console.log("Service Worker: Fetching");
-  e.respondWith(
-    fetch(e.request).then((res) => {
-      // Make a copy/clone response
-      const resClone = res.clone();
-      // Open cache
-      caches.open(cacheName).then((cache) => {
-        // add response to cache
-        cache.put(e.request, resClone);
-      });
-      return res;
-    }).catch(err => caches.match(e.request).then(res => res))
-  );
-});
+    console.log("Service Worker: Fetching");
+    e.respondWith(
+      fetch(e.request).then((res) => {
+        const resClone = res.clone();
+        return caches.open(cacheName).then((cache) => {
+          cache.put(e.request, resClone);
+          return res;
+        });
+      }).catch(err => {
+        console.error("Fetch Error:", err);
+        return caches.match(e.request);
+      })
+    );
+  });
+  

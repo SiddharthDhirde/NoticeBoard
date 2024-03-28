@@ -2,7 +2,7 @@
 const cacheName = "offline-cache-v1";
 
 // Assets to cache
-const cacheAssets = ["/", "/index.html", "/css/style.css", "/js/script.js"];
+const cacheAssets = ["./", "./index.html", "./css/style.css", "./main.js"];
 
 // Call Install Event
 self.addEventListener("install", (e) => {
