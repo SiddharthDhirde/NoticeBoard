@@ -37,6 +37,6 @@ self.addEventListener("fetch", (e) => {
         cache.put(e.request, resClone);
       });
       return res;
-    })
+    }).catch(err => caches.match(request).then(res => res))
   );
 });
