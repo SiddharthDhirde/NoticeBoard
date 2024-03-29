@@ -9,7 +9,7 @@ if ("serviceWorker" in navigator) {
 }
 
 // Set the localNotice in the localStorage
-var localNotice = "Dont have a Good Day, Have a Great Day!";
+var localNotice = "Don't have a Good Day, Have a Great Day!";
 localStorage.setItem("notice", localNotice);
 
 // Update the content of the notice-text paragraph element
