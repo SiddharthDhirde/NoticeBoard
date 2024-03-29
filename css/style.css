@@ -1,6 +1,6 @@
 body {
-  background-color: black;
-  color: #cdcdcd;
+  background-color: #cdcdcd;
+  color: black;
   font-family: Arial, sans-serif;
 }
 .content {
@@ -16,13 +16,14 @@ body {
   box-shadow: -5px 5px 20px rgba(255, 0, 0, 0.5); /* Example shadow */
   border: 20px solid transparent;
   width: 75%; /* Set width to 75% of the viewport */
-  max-width: 700px; /* Limit maximum width to 600px */
+  max-width: 700px; /* Limit maximum width to 700px */
   margin: 7% auto; /* Center the card horizontally */
   text-align: center; /* Center text horizontally */
 }
 
 .notice-card p {
   font-size: 28px; /* Increase font size */
+  text-align: justify;
 }
 
 .notice-card:focus {
