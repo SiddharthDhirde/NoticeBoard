@@ -1,9 +1,53 @@
 body {
   background-color: black;
-  color: white;
+  color: #cdcdcd;
   font-family: Arial, sans-serif;
 }
 .content {
   text-align: center;
   margin-top: 50px;
+}
+
+.notice-card {
+  background-color: #1c1c1c;
+  color: white;
+  padding: 20px;
+  border-radius: 30px;
+  box-shadow: -5px 5px 20px rgba(255, 0, 0, 0.5); /* Example shadow */
+  border: 20px solid transparent;
+  width: 75%; /* Set width to 75% of the viewport */
+  max-width: 700px; /* Limit maximum width to 600px */
+  margin: 7% auto; /* Center the card horizontally */
+  text-align: center; /* Center text horizontally */
+}
+
+.notice-card p {
+  font-size: 28px; /* Increase font size */
+}
+
+.notice-card:focus {
+  border: 2px solid #ff0000; /* Example glowing border */
+  outline: none;
+}
+
+.notice-card:hover {
+  background-color: #2c2c2c; /* Darken background color */
+}
+
+.notice-card:active {
+  background-color: #3c3c3c; /* Further darken background color */
+}
+
+
+/* Add CSS rules for responsiveness */
+@media screen and (max-width: 1600px) {
+  .content {
+    margin-top: 20px; /* Adjust margin for smaller screens */
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .content {
+    margin-top: 10px; /* Further adjust margin for smaller screens */
+  }
 }
