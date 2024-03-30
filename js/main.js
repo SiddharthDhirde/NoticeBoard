@@ -11,7 +11,7 @@ if ("serviceWorker" in navigator) {
 }
 
 function fetchNoticeMessages() {
-  return fetch("../notices.json")
+  return fetch("https://siddharthdhirde.github.io/NoticeBoard/notices.json")
     .then((response) => response.json())
     .then((data) => data.map((item) => item.message));
 }
