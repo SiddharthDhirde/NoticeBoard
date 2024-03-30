@@ -3,7 +3,7 @@ if ("serviceWorker" in navigator) {
   window.addEventListener("load", () => {
     navigator.serviceWorker
       .register(
-        "https://siddharthdhirde.github.io/NoticeBoard/sw_cached_site.js"
+        "../sw_cached_site.js"
       )
       .then((reg) => console.log("ServiceWorker registered successfully"))
       .catch((err) => console.log(`ServiceWorker registration failed: ${err}`));
@@ -11,7 +11,7 @@ if ("serviceWorker" in navigator) {
 }
 
 function fetchNoticeMessages() {
-  return fetch("https://siddharthdhirde.github.io/NoticeBoard/notices.json")
+  return fetch("../notices.json")
     .then((response) => response.json())
     .then((data) => data.map((item) => item.message));
 }
