@@ -24,6 +24,11 @@ This is a simple web application for displaying notices, designed to inform stud
 3. Notice messages will automatically rotate at regular intervals.
 4. To update notice messages, modify the `notices.json` file with new messages.
 
+## Website
+
+- **Light Mode**: [https://digitalnotice.netlify.app/](https://digitalnotice.netlify.app/)
+- **Dark Mode**: [https://darknoticeboard.netlify.app/](https://darknoticeboard.netlify.app/)
+
 ## Contributions
 
 Contributions to the project are welcome! If you have any ideas for improvements or feature enhancements, feel free to open an issue or submit a pull request.
