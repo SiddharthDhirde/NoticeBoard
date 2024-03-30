@@ -1,6 +1,6 @@
 body {
-  background-color: black;
-  color: #cdcdcd;
+  background-color: #f2f2f2;
+  color: #1c1c1c;
   font-family: Arial, sans-serif;
 }
 .content {
@@ -9,14 +9,14 @@ body {
 }
 
 .notice-card {
-  background-color: #1c1c1c;
-  color: white;
+  background-color: white;
+  color: black;
   padding: 20px;
   border-radius: 30px;
-  box-shadow: -5px 5px 20px rgba(255, 0, 0, 0.5); /* Example shadow */
+  box-shadow: -5px 5px 20px rgba(35, 209, 218, 0.5); /* Example shadow */
   border: 20px solid transparent;
   width: 75%; /* Set width to 75% of the viewport */
-  max-width: 700px; /* Limit maximum width to 700px */
+  max-width: 800px; /* Limit maximum width to 800px */  
   margin: 7% auto; /* Center the card horizontally */
   text-align: center; /* Center text horizontally */
 }
@@ -27,16 +27,16 @@ body {
 }
 
 .notice-card:focus {
-  border: 2px solid #ff0000; /* Example glowing border */
+  border: 2px solid #10d9d9; /* Example glowing border */
   outline: none;
 }
 
-.notice-card:hover {
-  background-color: #2c2c2c; /* Darken background color */
+.notice-card:hover{
+  background-color: #e5e5e5;
 }
 
 .notice-card:active {
-  background-color: #3c3c3c; /* Further darken background color */
+  background-color: #b2b2b2; /* Further darken background color */
 }
 
 
