@@ -16,7 +16,7 @@ body {
   box-shadow: -5px 5px 20px rgba(255, 0, 0, 0.5); /* Example shadow */
   border: 20px solid transparent;
   width: 75%; /* Set width to 75% of the viewport */
-  max-width: 700px; /* Limit maximum width to 700px */
+  max-width: 800px; /* Limit maximum width to 800px */
   margin: 7% auto; /* Center the card horizontally */
   text-align: center; /* Center text horizontally */
 }
